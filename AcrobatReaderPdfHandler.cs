@@ -22,6 +22,7 @@ namespace OpenPdfAt
 
       public int OpenAtNamedDest(string _nameddest, string _filename)
       {
+         Process.Start(m_executable, String.Format("/A \"nameddest={0}\"  \"{1}\"", _nameddest, _filename));
          return 0;
       }
    }
